@@ -1,6 +1,6 @@
 # quicksort-js
 
-This is a functional approach to implement the quicksort alogroithm in JavaScript.
+This is a functional approach to implement the quicksort algorithm in JavaScript.
 
 As a result of ES5/ES6 Feature the implementation is pretty short.
 

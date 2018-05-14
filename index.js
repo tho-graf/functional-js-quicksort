@@ -4,14 +4,7 @@
  * (a -> Bool) -> [a] -> ([a],[a])
  */
 function partition(predicate) {
-    return arr =>
-        arr.reduce(
-            ([left, right], cur) => [
-                predicate(cur) ? [...left, cur] : left,
-                !predicate(cur) ? [...right, cur] : right
-            ],
-            [[], []]
-        );
+    return arr => arr.reduce((acc, cur) => acc[predicate(cur) ? 0 : 1].push(cur), [[], []]);
 }
 
 function quicksort([x, ...xs]) {
